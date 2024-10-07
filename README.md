@@ -5,6 +5,7 @@
 
 首先，在主頁的部分，除了顯示日期時間之外，背景的影片會隨著時間變換，但因為github的容量限制
 背景影片請到下方網址進行下載 (https://drive.google.com/drive/folders/194k8GY9-TlIaQGPMcHj0YqR46qF_rTsS?usp=sharing)
+下載後放到pulic下，或是在BackgroundVideo.jsx中改變路徑
 ![image](https://github.com/user-attachments/assets/7a0e1bd7-d71a-42bd-a3c5-9b5b3167f86e)
 
 天氣:以縣市劃分用api的方式將資料進行處理並顯示
