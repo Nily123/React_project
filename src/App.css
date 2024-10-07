@@ -1,0 +1,89 @@
+.cat_div{
+  position: absolute; /* 設置容器相對定位 */
+  width: 40%; /* 根據 GIF 大小設置寬度 */
+  height: 40%; /* 根據 GIF 大小設置高度 */
+  top:60%;
+  left:60%;
+}
+.cat {
+  width: auto; /* 讓 GIF 自適應容器大小 */
+  max-width: 400px;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  opacity: 0; /* 預設所有 GIF 隱藏 */
+  z-index: 2;
+  position: absolute;
+  top:0%;
+}
+
+.c0{
+  animation: show 12.375s infinite ;
+}
+
+.c1 {
+  animation: C1 12.375s infinite; /* 9秒完成一次動畫循環 */
+}
+
+.c2 {
+  animation: C2 12.375s infinite; /* 9秒完成一次動畫循環 */
+}
+
+.c3 {
+  animation: C3 12.375s infinite; /* 9秒完成一次動畫循環 */
+}
+
+/* 定義動畫，讓 GIF 循環顯示和隱藏 */
+@keyframes C1 {
+  0%, 11.1% {
+    opacity: 1; /* 顯示 */
+  }
+  11.2%, 83.95% {
+    opacity: 0; /* 隱藏 */
+  }
+  83.96%,95.07%{
+    opacity: 1;
+  }
+}
+@keyframes C2 {
+  0%, 27.369% {
+    opacity: 0;
+  }
+  27.37%, 43.53% {
+    opacity: 1; /* 顯示 */
+  }
+  43.54%, 100% {
+    opacity: 0; /* 隱藏 */
+  }
+}
+@keyframes C3 {
+  0%,59.709%{
+    opacity: 0;
+  }
+  59.71%,83.95%{
+    opacity: 1;
+  }
+  83.96%, 100% {
+    opacity: 0; /* 隱藏 */
+  }
+}
+@keyframes show{
+  0%,11.19%{
+    opacity: 0;
+  }
+  11.2%,27.36%{
+    opacity: 1;
+  }
+  27.37%,43.539%{
+    opacity: 0;
+  }
+  43.54%,59.7%{
+    opacity: 1;
+  }
+  59.71%,95.07%{
+    opacity: 0;
+  }
+  95.08%,100%{
+    opacity: 1;
+  }
+}

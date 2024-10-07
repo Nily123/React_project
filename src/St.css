@@ -1,0 +1,52 @@
+.st{
+    width: 90%;
+    margin: 5vh 5vw;
+}
+.st_search{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left: 10vw;
+}
+.st_input{
+    margin-left: 15vw;
+    height: 5vh;
+    border-radius: 10px;
+    width: 25vw;
+}
+.st_but{
+    height: 5vh;
+    font-size: 1.5em;
+    background-color: rgba(240, 248, 255, 0);
+    color: aliceblue;
+    border-color: rgba(240, 248, 255, 0) ;
+    margin-left: 10px;
+}
+.st_ch{
+    width: 50%;
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+    background-color: rgb(240, 248, 255);
+    padding: 2% 5%;
+    border-radius: 10px;
+}
+.st_info{
+    position: absolute;
+    bottom: 18%;
+    width: 35%;
+}
+.st_info h2{
+    color: aliceblue;
+    text-shadow: 2px 0px black;
+    font-size: 2em;
+    font-weight: 800;
+    margin-left: 40%;
+}
+.st_price{
+    padding: 5% 5%;
+    margin: 5%;
+    font-size: larger;
+    background-color: aliceblue;
+    border-radius: 10px;
+}

@@ -1,0 +1,17 @@
+.date, .time{
+    color: azure;
+    text-align: center;
+    
+}
+.date{
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    font-size: 3vw;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+.time{
+    font-size: 5vw;
+    font-weight: 600;
+
+}

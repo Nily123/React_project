@@ -1,0 +1,54 @@
+.todo{
+    position: absolute;
+    right: 5vw;
+    top:20vh;
+}
+.todo h3{
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.input_todo{
+    margin: 2vh 0;
+    border-radius: 5px;
+    border-color: aliceblue ;
+}
+
+.input_time{
+    margin: 2vh 2vw;
+    border-radius: 5px;
+    border-color: aliceblue ;
+}
+
+.todo_add{
+    background-color: rgba(240, 248, 255, 0);
+    border-color: rgba(240, 248, 255, 0);
+    color: aliceblue;
+    font-size: 1.3em;
+}
+
+.to_ul{
+    padding: 2vh 2vw;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.to_li{
+    list-style: none;
+    margin: 1vh;
+    border-bottom:  black solid 2px;
+}
+.delete{
+    background-color: rgba(240, 248, 255, 0);
+    border-color: rgba(240, 248, 255, 0);
+    color: rgb(54, 54, 54);
+    font-size: 1.3em;
+    position: absolute;
+    right: 10%;
+    transform: translateY(-1vh);
+    padding: 0.3vh;
+}
+.delete:hover{
+    background-color: rgb(181, 181, 181);
+    border-radius: 5px;
+}

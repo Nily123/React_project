@@ -1,0 +1,57 @@
+body{
+  width: 100vm;
+  min-height: 100vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(45, 45, 45);
+  background-image: url("../public/cdkm.gif");
+  background-size:cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: aliceblue;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /*opacity: 0.1;*/
+}
+.carousel{
+  opacity: 1;
+  position: relative;
+  width: 100%;
+  max-width: max-content;
+  margin: auto;
+  overflow: hidden;
+}
+.slide{
+  display: flex;
+  width: 400%;
+}
+.c{
+  width: 80vw ;
+  margin: 0 10vw 0 10vw;
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0.146);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border:  0.5px solid rgba(240, 255, 255, 0.792);
+}
+.c_home{
+  width: 80vw ;
+  margin: 0 10vw 0 10vw;
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  backdrop-filter: blur(0px);
+  border:  0.5px solid rgba(240, 255, 255, 0.792);
+}
+
+.if{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}

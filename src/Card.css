@@ -1,0 +1,107 @@
+@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    
+}
+.banner .slider{
+    position: absolute;
+    width: 100px;
+    height: 175px;
+    top: 10%;
+    left: calc(50% - 50px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+    z-index: 2;
+}
+@keyframes autoRun{
+    from{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    }to{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    transition: transform 0.6s, background-color 0.6s;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(300px);
+}
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 暫停動畫 */
+.paused {
+    animation-play-state: paused !important;
+}
+
+/* 點擊的圖片翻轉效果 */
+.flipped {
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg)) 
+        translateZ(550px) 
+        rotateY(180deg); /* Y 軸翻轉 180 度 */
+    transition: transform 0.6s; /* 翻轉時的過渡效果 */
+    background-color: white;  /* 翻轉後變白色 */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);  /* 發光效果 */
+}
+.item.flipped img {
+    opacity: 0; /* 翻轉後圖片淡出 */
+  }
+/* 視覺背面隱藏 */
+.item img {
+    backface-visibility: hidden;
+}
+/* 重置按鈕樣式 */
+.reset-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 999; /* 保證在其他元素之上 */
+  }
+  
+  .reset-button:hover {
+    background-color: #ff3333;
+  }
+  /* 卡片背面 */
+.item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    backface-visibility: hidden;
+    transform: rotateY(180deg); /* 背面內容翻轉 */
+  }
+  
+  /* 顯示文字的區域 */
+  .result-text {
+    position: absolute;
+    top:60vh;
+    right: 40vw;
+    margin-top: 20px;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }

@@ -1,0 +1,82 @@
+.navbox, #root{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.navbox{
+    position: absolute;
+    bottom: 5vh;
+    left: calc(50% - 265px);
+}
+.box{
+    width: 530px;
+    height: 70px;
+    background-color: rgb(255, 149, 149);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.box ul{
+    display: flex;
+    padding: 0;
+}
+.box ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.box ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.box ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+.box ul li.active a .icon{
+    transform: translateY(-35px);
+    color: rgb(255, 125, 125);
+}
+.box ul li a .text{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.box ul li.active a .text{
+    opacity: 1;
+    transform: translateY(10px);
+}
+.backcard{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: 0.5s;
+    top:-50%;
+}

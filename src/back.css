@@ -1,0 +1,8 @@
+#background-video {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -10;  /* 影片在背景，其他內容疊加在上 */
+  }
